@@ -27,7 +27,7 @@ public class Board : MonoBehaviour
         {
             for (int j = 0; j < column; j++)
             {
-                GameObject tile = Instantiate(tilePrefab, new Vector3(i, j, 0), Quaternion.identity);
+                GameObject tile = Instantiate(tilePrefab, new Vector3(j, -i, 0), Quaternion.identity);
                 tile.transform.parent = this.transform;
                 tile.name = "Tile " + i + " " + j;
             }
