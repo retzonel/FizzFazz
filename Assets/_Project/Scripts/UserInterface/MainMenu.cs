@@ -28,6 +28,8 @@ public class MainMenu : MonoBehaviour
             AudioManager.Instance.ToggleSFX();
             UpdateSettingsVisuals();
         });
+        
+        GameManager.Instance?.Reset();
     }
 
     // Update is called once per frame

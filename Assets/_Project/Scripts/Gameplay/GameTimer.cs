@@ -11,7 +11,7 @@ public class GameTimer : MonoBehaviour
     {
         if (Instance != null)
         {
-            Debug.LogError("More than one instance of GameTimer found!");
+            Debug.Log("More than one instance of GameTimer found!");
             Destroy(gameObject);
             return;
         }

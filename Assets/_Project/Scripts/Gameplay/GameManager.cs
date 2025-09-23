@@ -16,12 +16,17 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Debug.LogError("More than one instance of KitchenGameManager found!");
+            Debug.Log("More than one instance of GameManager found!");
             Destroy(gameObject);
             return;
         }
 
         Instance = this;
+    }
+
+    private void Start()
+    {
+        Reset();
     }
 
     public void TogglePause()
@@ -65,6 +70,14 @@ public class GameManager : MonoBehaviour
     {
         return CurrentGameOverType;
     }
+    
+    public void Reset()
+    {
+        isGamePaused = false;
+        Time.timeScale = 1f;
+        CurrentGameOverType = GameOverType.None;
+        CurrentState = GameState.Playing;
+    }
 }
 
 public enum GameState
@@ -75,6 +88,7 @@ public enum GameState
 
 public enum GameOverType
 {
+    None,
     Win, //complete all puzzle in time
     Lose // time run out
 }

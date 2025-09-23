@@ -15,15 +15,14 @@ public class AudioManager : MonoBehaviour
     
     void Awake()
     {
-        if (Instance == null)
+        if (Instance != null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
+            Debug.Log("More than one instance of Auido Manager found!");
             Destroy(gameObject);
+            return;
         }
+        
+        Instance = this;
     }
 
     private void Start()
