@@ -258,7 +258,6 @@ MonoBehaviour:
   musicOff: {fileID: 21300000, guid: 617455490d6c324499788a11107673b6, type: 3}
   sfxOn: {fileID: 21300000, guid: 5c1ccf02b767cb043abe6ccc08ddd908, type: 3}
   sfxOff: {fileID: 21300000, guid: f603e9d9fe680cf42a696422a93923d3, type: 3}
-  canvasGroup: {fileID: 6968531}
 --- !u!114 &6968533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,6 +618,7 @@ GameObject:
   - component: {fileID: 108728542}
   - component: {fileID: 108728541}
   - component: {fileID: 108728540}
+  - component: {fileID: 108728544}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -743,6 +743,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108728538}
   m_CullTransparentMesh: 1
+--- !u!114 &108728544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108728538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f93b1aa26f3764469a6957d8534709c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScale: 1
+  maxScale: 1.2
+  tweenDuration: 0.5
 --- !u!1 &142117106
 GameObject:
   m_ObjectHideFlags: 0
