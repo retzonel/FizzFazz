@@ -29,11 +29,17 @@ public class AlienProgressGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) // forward
         {
             OnPuzzleStepSolved();
         }
+
+        if (Input.GetKeyDown(KeyCode.Backspace)) // backward
+        {
+            OnPuzzleStepUnsolved();
+        }
     }
+
 
     void GeneratePath()
     {
@@ -68,8 +74,7 @@ public class AlienProgressGenerator : MonoBehaviour
         if (currentStep >= totalSteps) return;
 
         currentStep++;
-        alienA.DOJump(path[currentStep].position, 0.5f, 1, 0.3f);
-        // target, jump power, number of jumps, duration
+        MoveAlienToStep(currentStep);
 
         AudioManager.Instance.PlaySound(stepSound);
 
@@ -79,6 +84,22 @@ public class AlienProgressGenerator : MonoBehaviour
             DOVirtual.DelayedCall(0.35f, () => HandleAliensMeeting());
         }
     }
+
+    public void OnPuzzleStepUnsolved()
+    {
+        if (currentStep <= 0) return;
+
+        currentStep--;
+        MoveAlienToStep(currentStep);
+
+        AudioManager.Instance.PlaySound(stepSound);
+    }
+
+    private void MoveAlienToStep(int step)
+    {
+        alienA.DOJump(path[step].position, 0.5f, 1, 0.3f);
+    }
+
 
     void HandleAliensMeeting()
     {
