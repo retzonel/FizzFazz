@@ -6,20 +6,49 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< HEAD
     path: Assets/_Project/Scenes/MainMenu.unity
     guid: e2b32f993c99ab54a8731ffb5d192591
   - enabled: 1
-    path: Assets/_Project/Scenes/Level1.unity
-    guid: a758032f915148843bb14f23c619e23e
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c1742c76d61759f43927a63fdfeec516, type: 3}
-=======
-    path: Assets/Test/Project/Scenes/MainMenu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/_Project/Scenes/CutsceneStart.unity
+    guid: b4ba6b93ab7fc6f4c9a72ceab5632e8b
   - enabled: 1
-    path: Assets/Test/Project/Scenes/Gameplay.unity
-    guid: 6840100d1fc3a9c459a5ef4d8d46bb82
+    path: Assets/_Project/Scenes/Level1.unity
+    guid: 10633ae815de95f4fbfaef27ade176b7
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level2.unity
+    guid: 6ab43fd46902c044b90bbcc41bcc88b1
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level3.unity
+    guid: 2505b544f6b404546849c544416de259
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level4.unity
+    guid: 7a72323851b5c174aa1475886681290e
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level5.unity
+    guid: f943cbd910ad2694393af91ecee49dc3
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level6.unity
+    guid: f3772ac3b9af6804aaf139e09705cb5a
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level7.unity
+    guid: 377bda5532c91ae40be52079b6bb0a67
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level8.unity
+    guid: de1c946b078862c4eaf7c48f8d9b42da
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level9.unity
+    guid: e7d72ead71d4993408138868cc078924
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level10.unity
+    guid: 7deb46a226360ea4a9563531654e2c74
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level11.unity
+    guid: 67bc2a7670e9e6442bd158ebf0e6fd3d
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level12.unity
+    guid: be4d3ecdd96f43c4f92b00b9d862f19a
+  - enabled: 1
+    path: Assets/_Project/Scenes/GameEnd.unity
+    guid: eb0d8a1c18aeb394f8ac31f366c0e91b
   m_configObjects: {}
->>>>>>> origin/DiamondMind
   m_UseUCBPForAssetBundles: 0
