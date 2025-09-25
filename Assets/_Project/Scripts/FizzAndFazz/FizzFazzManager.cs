@@ -35,20 +35,6 @@ public class AlienProgressGenerator : MonoBehaviour
         GeneratePath();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) // forward
-        {
-            OnPuzzleStepSolved();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Backspace)) // backward
-        {
-            OnPuzzleStepUnsolved();
-        }
-    }
-
-
     void GeneratePath()
     {
         // Clear old path
